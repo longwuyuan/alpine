@@ -1,6 +1,6 @@
 From alpine
 
-RUN apk -U apk add curl tcpdump lsof iperf nmap openssh-client nginx && \
+RUN apk -U add curl tcpdump lsof iperf nmap openssh-client nginx supervisor && \
   apk upgrade
 
 COPY supervisord.conf /etc/supervisord.conf
