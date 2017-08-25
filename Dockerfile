@@ -1,6 +1,6 @@
 From alpine
 
-RUN apk -U add curl tcpdump lsof iperf nmap openssh-client nginx supervisor && \
+RUN apk -U add curl tcpdump lsof iperf nmap openssh-client nginx supervisor nfs-utils py2-pip && \
   apk upgrade && \
   mkdir /run/nginx
 
