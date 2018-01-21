@@ -5,4 +5,6 @@ RUN apk -U add curl tcpdump tcptraceroute lsof iperf nmap openssh-client supervi
 
 COPY supervisord.conf /etc/supervisord.conf
 
+ONBUILD RUN apk update
+
 CMD supervisord
